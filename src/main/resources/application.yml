@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/absence_db
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect # Utilisation du dialecte pour MySQL 8
+    hibernate:
+      ddl-auto: update # Utilisation de la stratégie de mise à jour de la base de données
+    show-sql: true
+
+server:
+  port: 8085
